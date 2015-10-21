@@ -10,10 +10,20 @@ html, body{
   
  }
  
+ 
  h1{
      animation-name: fadeIn; 
- 	animation-duration: 4s; 
-
+ 	 animation-duration: 100s; 
+}
+@-webkit-keyframes fadein {
+  from {
+    background-color:#000000;
+    
+  }
+  
+  to {
+   background-color:#34495E;
+ }
 }
 
  h2 {
