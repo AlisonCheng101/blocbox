@@ -12,18 +12,22 @@ html, body{
  
  
  h1{
-     animation-name: fadeIn; 
- 	 animation-duration: 100s; 
+     animation-name: fadein; 
+ 	 animation-duration: 0s; 
 }
+
 @-webkit-keyframes fadein {
-  from {
-    background-color:#000000;
-    
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
   }
-  
-  to {
-   background-color:#34495E;
- }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
  h2 {
