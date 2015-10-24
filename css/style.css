@@ -496,7 +496,7 @@ html, body{
    font-weight: 400;
    margin:0 0 0 10px;
  }
- .left-nav .settings li{
+ .left-nav .settings a{
    color:#FFFFFF;
    text-decoration: none;
    text-align: right;
