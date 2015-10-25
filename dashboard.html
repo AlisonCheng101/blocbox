@@ -19,6 +19,11 @@
  </head>
 
  <body class="dashboard">
+
+  <!-- RESPONSIVE NAV -->
+   <a class="hamburger" id="menu" href="#">&#9776;</a>
+   
+
    <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
      <a href="#" class="logo"><img src="images/Logo.png" /></a>
@@ -41,7 +46,16 @@
    <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg">
      <p>Susan Lee</p>
-     <a href="#"><i class="fa fa-cog"></i></a>
+     <ul class="menu2">
+     <li>
+        <a href="#"><i class="fa fa-cog"></i></a>
+        <ul>
+         <li><a href="#">Account settings</a></li>
+          <li><a href="#">Collaborators</a></li>
+           <li><a href="#">Sign out</a></li>
+        </ul>
+    </li>
+    </ul>
    </div>
   </nav>
 <main role="main">
@@ -50,7 +64,22 @@
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
+         <ul class="menu">
+         <li>
+            <a href="#" class="btn">+ Add</a>
+            <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+            </ul>
+
+         </li>
        </div>
      </div>
      <div class="container">
@@ -116,7 +145,20 @@
      </div> 
    </section>
  </main>
- <script src="jquery-2.1.4.min.js"></script>
-<script src="js/dropit.js"></script>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+     $(".menu").dropit();
+     $(".menu2").dropit();
+     $( "#menu" ).click(function() {
+         $("#left-nav").toggleClass("open", 200);
+     });
+
+  
+  
+   </script>
 </body>
 </html>
+
+
