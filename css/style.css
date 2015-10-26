@@ -12,11 +12,11 @@ html, body{
  
  
  h1{
-     animation-name: fadeIn; 
+     animation-name: fadein; 
  	 animation-duration: 10s; 
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadein {
   0% {
     transform: scale(0.1);
     opacity: 0;
@@ -319,8 +319,51 @@ html, body{
  	margin-top: 50px;
 
  } 
- 
+ /* CALL TO ACTION */
+ .signup h2{
+	color: #3498DB;
+ 	text-align: center;
+ 	
  }
+.signup h3{
+	text-align: center;
+	font-family: "Lato";
+	font-size: 15px;
+ }
+
+
+ .signup .btn-outline:hover {
+   background:#FFFFFF;
+ }
+ .signup li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+
+ .signup li{
+ 	text-align: center;
+ 	list-style-type: none;
+
+ }
+
+.signup .btn-outline{
+   width:5%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 45% 10px;
+   border-radius: 10px;
+   text-decoration: none;
+   color:#FFFFFF;
+   font-weight: 700;
+   padding:5px 30px;
+   background: #B31E00;
+   border: 2px solid #34495E;
+   box-shadow: 0px 2px 0px 0px #34495E;
+
+}
+
+
  /* FOOTER */
  footer {
    background-color: #34495E;
@@ -353,6 +396,7 @@ html, body{
    padding: 2.35em 0;
    margin: 0 auto;
    display: block;
+   padding: 2em 0 2em 2em;
  }
  @media (min-width: 992px){
    footer{
@@ -365,64 +409,8 @@ html, body{
      padding: 2em 0;
      text-align: left;
    }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-   }
- }
-/* FOOTER */
- footer {
-   background-color: #34495E;
-   background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
-   color: #FFFFFF;
-   height: 150px;
-   position: relative;
-   overflow: hidden;
-   z-index: 0;
- }
- footer p, footer nav ul {
-   font-size:14px;
-   font-weight:100;
-   text-align: center;
-   margin: 10px auto 0;
- }
- footer nav ul li {
-   list-style-type: none;
-   display: inline;
- }
- footer nav ul li a {
-   color:#FFFFFF;
-   text-decoration: none;
- }
- footer .right-footer-block {
-   background-color: transparent;
- }
- footer .logo{
-   padding: 2.35em 0;
-   margin: 0 auto;
-   display: block;
- }
-  @media (min-width: 992px){
-   footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-   }
- }
+ 
+
 
 /* DASHBOARD */
  .dashboard {
@@ -689,64 +677,3 @@ html, body{
  }
 
 
-		
-
-		menu2 .dropit {
-  list-style: none;
-  padding: 0;
- 
-  margin: 15px 0 0;
-  float:right;
-  display:inline-block;
-}
-.mune2 .dropit .dropit-trigger { position: relative; }
-.menu2 .dropit .dropit-submenu {
-  position: absolute;
-  bottom: 100%;
-  
-  right: 0; /* dropdown left or right */
-  z-index: 1000;
-  display: none;
-  
-  min-width: 100px;
-  list-style: none;
- 
-  padding: 20px;
-  
-  margin: 20px 0 0;
-}
-
-
-.menu2 .dropit .dropit-open .dropit-submenu {
-  display: block;
-   background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
-   border-radius: 4px;
-}
- .menu2.dropit .dropit-open .dropit-submenu:after {
-  content: " ";
-  position: absolute;
-  border-style: solid;
-  border-width: 0 8px 8px;
-  border-color: #FFFFFF transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  top: -8px;
-  right: 10px;
- }
- .menu2.dropit .dropit-open .dropit-submenu li {
-  display: block;
-  margin-bottom: 20px;
- }
- .menu2.dropit .dropit-open .dropit-submenu li:last-child {
-  margin-bottom: 0px;
- }
- .menu2.dropit .dropit-open .dropit-submenu li a {
-  color:#34495E;
-  text-decoration: none;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight:100;
- }
-
-		
